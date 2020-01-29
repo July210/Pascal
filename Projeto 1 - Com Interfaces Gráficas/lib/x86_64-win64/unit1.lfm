@@ -1,0 +1,156 @@
+object Form1: TForm1
+  Left = 604
+  Height = 354
+  Top = 175
+  Width = 729
+  Caption = 'Form1'
+  ClientHeight = 354
+  ClientWidth = 729
+  LCLVersion = '1.6.0.4'
+  object convC: TButton
+    Left = 32
+    Height = 25
+    Top = 168
+    Width = 168
+    Caption = 'Converter para Celsius'
+    OnClick = convCClick
+    TabOrder = 0
+  end
+  object convK: TButton
+    Left = 280
+    Height = 25
+    Top = 168
+    Width = 168
+    Caption = 'Converter para Kelvin'
+    OnClick = convKClick
+    TabOrder = 1
+  end
+  object convF: TButton
+    Left = 528
+    Height = 25
+    Top = 168
+    Width = 168
+    Caption = 'Converter para Fahrenheit'
+    OnClick = convFClick
+    TabOrder = 2
+  end
+  object txtoriginal: TEdit
+    Left = 32
+    Height = 23
+    Top = 56
+    Width = 664
+    OnExit = txtoriginalExit
+    TabOrder = 3
+  end
+  object txtconvertido: TEdit
+    Left = 32
+    Height = 23
+    Top = 248
+    Width = 664
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object quantC: TEdit
+    Left = 80
+    Height = 23
+    Top = 112
+    Width = 80
+    ReadOnly = True
+    TabOrder = 5
+  end
+  object quantK: TEdit
+    Left = 328
+    Height = 23
+    Top = 112
+    Width = 80
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object quantF: TEdit
+    Left = 584
+    Height = 23
+    Top = 112
+    Width = 80
+    ReadOnly = True
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 20
+    Top = 24
+    Width = 340
+    Caption = 'Digite  o texto contendo as medidas de temperatura:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 20
+    Top = 112
+    Width = 15
+    Caption = 'C:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 304
+    Height = 20
+    Top = 112
+    Width = 14
+    Caption = 'K:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 560
+    Height = 20
+    Top = 112
+    Width = 13
+    Caption = 'F:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 32
+    Height = 20
+    Top = 216
+    Width = 113
+    Caption = 'Texto convertido:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnLimpar: TButton
+    Left = 280
+    Height = 25
+    Top = 296
+    Width = 168
+    Caption = 'Limpar'
+    OnClick = btnLimparClick
+    TabOrder = 8
+  end
+end
